@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="reverse" match-name="attenders"/>
+  <table-filter match-catalog="reverse" match-name="company"/>
+  <table-filter match-catalog="reverse" match-name="event"/>
+  <table-filter match-catalog="reverse" match-name="event_attenders"/>
+  <table-filter match-catalog="reverse" match-name="event_speaker"/>
+  <table-filter match-catalog="reverse" match-name="location"/>
+  <table-filter match-catalog="reverse" match-name="manager"/>
+  <table-filter match-catalog="reverse" match-name="speaker"/>
+</hibernate-reverse-engineering>

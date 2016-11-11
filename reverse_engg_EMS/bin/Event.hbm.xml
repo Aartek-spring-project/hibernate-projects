@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2016 10:54:55 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.Event" table="event" catalog="reverse">
+        <id name="eid" type="int">
+            <column name="eid" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="company" class="com.Company" fetch="select">
+            <column name="comp_id" />
+        </many-to-one>
+        <many-to-one name="location" class="com.Location" fetch="select">
+            <column name="location_loc_id" />
+        </many-to-one>
+        <property name="ename" type="string">
+            <column name="ename" />
+        </property>
+        <set name="speakers" table="event_speaker" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="eid" not-null="true" />
+            </key>
+            <many-to-many entity-name="com.Speaker">
+                <column name="speakid" not-null="true" />
+            </many-to-many>
+        </set>
+        <set name="managers" table="manager" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="eid" />
+            </key>
+            <one-to-many class="com.Manager" />
+        </set>
+        <set name="eventAttenderses" table="event_attenders" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="eid" not-null="true" />
+            </key>
+            <one-to-many class="com.EventAttenders" />
+        </set>
+    </class>
+</hibernate-mapping>

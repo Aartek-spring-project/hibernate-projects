@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+ 
+ <class name="com.prestige.StudentCourse" table="student_course" >
+    <id name="course_id" column="iCourseID">
+            <generator class="native"/>
+    </id>
+    <set name="student" table="student" cascade="all">
+        <key column="iCourseID" />
+        <one-to-many class="com.prestige.Student"/>
+    </set>
+    <property name="course_name" column="sCourseName" />
+    <property name="course_duration" type="integer" column="sDuration"/>
+ </class>
+ 
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+1467207315329	Rename type 'ComputerDetails'
+1467207322631	Rename resource 'Computers.hbm.xml'
+1467207339851	Rename type 'Users'
+1467207346866	Rename type 'Computers'
+1467207410995	Rename type 'Employees'
+1467207420307	Rename resource 'Employees.hbm.xml'
+1467208229230	Copy package
+1467208795881	Rename type 'Profile'
+1467208808246	Copy file
+1467208819254	Rename type 'Users'
+1467208831475	Copy file
+1467209057006	Rename type 'UsersDetails'

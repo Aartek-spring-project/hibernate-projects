@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ <class name="com.banking.Bank" table="bank">
+ <id name="bank_id" column="bank_id"></id>
+ <property name="bank_name" column="Bname"></property>
+ <set name="banking" cascade="all">
+<key column="bankingId" />
+<one-to-many class="com.banking.Customer" />
+ </set>
+ </class>
+ </hibernate-mapping>

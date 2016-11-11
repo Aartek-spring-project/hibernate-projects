@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.prestige" auto-import="false">
+ 
+<class name="Book" table="book">
+    <id name="bookid" column="bookid">
+        <generator class="native"/>
+    </id>
+    <set name="ibook" table="book_author"
+            inverse="false" cascade="all" fetch="join" >
+        <key column="bookid" not-null="true"/>
+        <many-to-many class="com.prestige.Author"
+            column="authorid" />
+    </set>
+    <property name="bookname" type="string" column="bookname" />
+</class>
+ 
+</hibernate-mapping>

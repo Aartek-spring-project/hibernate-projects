@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="com.country.HeadOfState" table="hostate">
+ 
+<id name="hid" column="hid">
+<generator class="native">
+<param name="property">p</param>
+</generator>
+</id>
+<property name="sName" column="sName" length="10"/>
+ <one-to-one name="p" class="com.country.Country" cascade="all" />
+</class>
+</hibernate-mapping>

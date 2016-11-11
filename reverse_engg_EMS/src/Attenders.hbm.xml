@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2016 10:54:55 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.Attenders" table="attenders" catalog="reverse">
+        <id name="aid" type="int">
+            <column name="aid" />
+            <generator class="assigned" />
+        </id>
+        <property name="aname" type="string">
+            <column name="aname" />
+        </property>
+        <set name="eventAttenderses" table="event_attenders" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="aid" not-null="true" />
+            </key>
+            <one-to-many class="com.EventAttenders" />
+        </set>
+    </class>
+</hibernate-mapping>

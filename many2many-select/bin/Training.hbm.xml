@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.prestige">
+ 
+<class name="Training" table="training" >
+    <id name="training_id" column="iTrainingID">
+            <generator class="native"/>
+    </id>
+    <set name="student" table="student_training" inverse="true">
+        <key column="iTrainingID" not-null="true"/>
+        <many-to-many class="com.prestige.Student"
+            column="iStudentID" />
+    </set>
+    <property name="training_name" column="sTrainingName" />
+</class>
+ 
+</hibernate-mapping>

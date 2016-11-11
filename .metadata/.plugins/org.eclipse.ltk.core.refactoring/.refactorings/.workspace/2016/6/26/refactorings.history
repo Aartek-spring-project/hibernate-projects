@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;hibernate-cache&apos; to &apos;hibernate-first-cache&apos;&#x0D;&#x0A;- Original element: &apos;hibernate-cache&apos;&#x0D;&#x0A;- Renamed element: &apos;hibernate-cache&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;hibernate-cache&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=hibernate-cache" name="hibernate-first-cache" references="true" stamp="1466615650818" version="1.0"/>
+</session>

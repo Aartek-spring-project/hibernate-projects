@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2016 10:54:55 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.Company" table="company" catalog="reverse">
+        <id name="compId" type="int">
+            <column name="comp_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="compName" type="string">
+            <column name="comp_name" />
+        </property>
+        <set name="events" table="event" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="comp_id" />
+            </key>
+            <one-to-many class="com.Event" />
+        </set>
+    </class>
+</hibernate-mapping>

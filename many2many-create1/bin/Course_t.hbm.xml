@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.training.Course_t" table="courses_t">
+<id name="courseId" column="courseId" />
+<property name="courseName" column="coursename"/>
+<property name="duration" />
+<set name="trainer" inverse="false" cascade="all" table="TC">
+<key column="courseId" />
+<many-to-many class="com.training.Training" column="tId"/> 
+</set>
+</class>
+</hibernate-mapping>

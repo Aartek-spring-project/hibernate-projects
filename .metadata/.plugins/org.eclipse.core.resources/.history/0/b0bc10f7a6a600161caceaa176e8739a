@@ -1,0 +1,50 @@
+package com.critJoin;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Projections;
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	
+	
+	Configuration cfg=new Configuration();
+	cfg.configure("hibernate.cfg.xml");		
+	SessionFactory session=new Configuration().configure().buildSessionFactory();
+	Session s=session.openSession();		
+	Criteria crit = s.createCriteria(UserDTO.class);
+   
+   
+	crit.setProjection(Projections.avg("mobile"));
+	crit.setProjection(Projections.property("UserName"));
+	List results = crit.list();
+    Iterator it=results.iterator();
+	/*while(it.hasNext())
+	{
+		Double ud=(Double)it.next();
+	    System.out.println("Total  :"+ud);
+	   
+		System.out.println("----------");
+	}*/
+    //for using "Projections.property"
+    while(it.hasNext())
+	{
+	    String ud=(String)it.next();
+	    System.out.println("Id :"+ud);
+	   
+	}
+	
+		s.close();
+}
+	
+}
+

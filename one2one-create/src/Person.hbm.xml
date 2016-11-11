@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="com.prestige.dto.Person" table="person">
+ 
+<id name="pid" column="pid">
+<generator class="native">
+<param name="property">p</param>
+</generator>
+</id>
+<property name="name" column="name" length="10"/>
+ <property name="city" column="city" length="10"/>
+<property name="passport_number" column="passport_number" />
+ <one-to-one name="p" class="com.prestige.dto.Passport" cascade="all" />
+</class>
+</hibernate-mapping>

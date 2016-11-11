@@ -1,0 +1,52 @@
+package com.critJoin;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
+
+import com.critJoin.*;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	
+	
+	Configuration cfg=new Configuration();
+	cfg.configure("hibernate.cfg.xml");		
+	SessionFactory sessionf=new Configuration().configure().buildSessionFactory();
+	Session session=sessionf.openSession();		
+	Criteria criteria = session.createCriteria(UserDTO.class,"user");
+		   /* .createAlias("user.admin","admin")
+		    .add(Restrictions.eq("user.id", "1"))
+		    .add(Restrictions.eq("admin.id", "1"));*/
+		    List results = criteria.list();
+	System.out.println("Hello");
+    Iterator it=results.iterator();
+	/*while(it.hasNext())
+	{
+		Double ud=(Double)it.next();
+	    System.out.println("Total  :"+ud);
+	   
+		System.out.println("----------");
+	}*/
+    //for using "Projections.property"
+    while(it.hasNext())
+	{
+	    Object ud=it.next();
+	    System.out.println("Id :"+ud.toString());
+	   
+	}
+	
+		session.close();
+}
+	
+}
+

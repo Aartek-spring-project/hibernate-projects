@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+ 
+<hibernate-mapping>
+<class name="com.prestige.dto.Profile" table="profile">
+ 
+<id name="pId" column="pId"  />
+<property name="pname" column="pname" length="10"/>
+</class>
+</hibernate-mapping>

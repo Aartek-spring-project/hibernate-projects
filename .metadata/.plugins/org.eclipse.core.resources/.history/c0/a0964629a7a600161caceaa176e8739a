@@ -1,0 +1,5 @@
+package com.critJoin;
+
+public class AdminDTO {
+
+}

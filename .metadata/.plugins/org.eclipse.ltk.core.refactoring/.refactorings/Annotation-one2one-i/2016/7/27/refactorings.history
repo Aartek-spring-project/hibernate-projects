@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.stockMarekt.dto&apos; to &apos;com.stockMarket.dto&apos;&#x0D;&#x0A;- Original project: &apos;Annotation-one2one-i&apos;&#x0D;&#x0A;- Original element: &apos;Annotation-one2one-i/src/com.stockMarekt.dto&apos;&#x0D;&#x0A;- Renamed element: &apos;Annotation-one2one-i/src/com.stockMarket.dto&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.stockMarekt.dto&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.stockMarekt.dto" name="com.stockMarket.dto" qualified="false" references="true" stamp="1467383338900" textual="false" version="1.0"/>
+</session>

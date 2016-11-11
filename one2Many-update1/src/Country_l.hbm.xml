@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ <class name="com.school.Country_l" table="Country_l">
+ <id name="cid" column="cid"></id>
+ <property name="c_name" column="c_name"></property>
+ <set name="language" cascade="all">
+<key column="studentblog" />
+<one-to-many class="com.school.Language_l" />
+ </set>
+ </class>
+ </hibernate-mapping>

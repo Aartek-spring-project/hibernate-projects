@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.prestige" auto-import="false">
+ 
+<class name="Student" table="student1">
+    <id name="student_id" column="iStudentID">
+        <generator class="native"/>
+    </id>
+    <set name="studentTraining" table="student_training"
+            inverse="false" cascade="all" fetch="join" >
+        <key column="iStudentID" not-null="true"/>
+        <many-to-many class="com.prestige.Training"
+            column="iTrainingID" />
+    </set>
+    <property name="student_roll_no" type="string" column="sStudentRollNo" />
+</class>
+ 
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+package com.critJoin;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class AdminDTO {
+
+	@Id
+	@GeneratedValue
+	@Column(name = "aid")
+	private int id;
+	@Column(name = "AdminuserName")
+	private String UserName;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getUserName() {
+		return UserName;
+	}
+	public void setUserName(String userName) {
+		UserName = userName;
+	}
+	
+	
+}

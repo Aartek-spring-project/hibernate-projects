@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.project" auto-import="false">
+ 
+<class name="Project" table="project">
+    <id name="pId" column="pId">
+       
+    </id>
+    <set name="employee" table="project_employee"
+            inverse="false" cascade="all">
+        <key column="pId" not-null="true"/>
+        <many-to-many class="com.project.Employee"
+            column="empId" />
+    </set>
+    <property name="projectName" type="string" column="projectName" />
+    <property name="date"  column="date" />
+</class>
+ 
+</hibernate-mapping>

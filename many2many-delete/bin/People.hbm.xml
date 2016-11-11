@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.address">
+ 
+<class name="People" table="people">
+    <id name="pid" column="pid">
+    </id>
+    <set name="pe_address" table="people_address" cascade="all">
+        <key column="pid" />
+        <many-to-many class="com.address.Addresses"  column="aid" />
+    </set>
+     <property name="fname"  column="fname"/>
+    <property name="lname"  column="lname"/>
+  
+       
+</class>
+ 
+</hibernate-mapping>

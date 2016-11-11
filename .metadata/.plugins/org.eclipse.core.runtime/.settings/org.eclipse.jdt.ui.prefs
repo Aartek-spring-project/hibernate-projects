@@ -1,0 +1,22 @@
+Refactoring.savealleditors=true
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.prestige.dto.UserDTO"><rhs name\="com.prestige.dto.UserDTO"/></lhs><lhs name\="org.hibernate.cfg.Configuration"><rhs name\="org.hibernate.cfg.Configuration"/><rhs name\="org.hibernate.cfg.AnnotationConfiguration"/></lhs><lhs name\="com.prestige.dto.SelectUser"><rhs name\="com.prestige.dto.SelectUser"/></lhs><lhs name\="com.prestige.UserDTO"><rhs name\="com.prestige.UserDTO"/></lhs><lhs name\="com.school.SchoolDetails"><rhs name\="com.school.SchoolDetails"/></lhs><lhs name\="com.prestige.Country"><rhs name\="com.prestige.Country"/></lhs><lhs name\="org.hibernate.criterion.CriteriaSpecification"><rhs name\="org.hibernate.criterion.DetachedCriteria"/></lhs><lhs name\="org.hibernate.criterion.DetachedCriteria"><rhs name\="org.hibernate.criterion.DetachedCriteria"/></lhs><lhs name\="com.railway.R_Address"><rhs name\="com.railway.R_Address"/></lhs><lhs name\="com.address.Addresses"><rhs name\="com.address.Addresses"/></lhs><lhs name\="com.address.People"><rhs name\="com.address.People"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.HashSet"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.HashSet"/></lhs><lhs name\="java.util.Set"><rhs name\="java.util.HashSet"/></lhs><lhs name\="com.ems.Company"><rhs name\="com.ems.Company"/></lhs><lhs name\="com.ems.Event"><rhs name\="com.ems.Event"/></lhs><lhs name\="com.ems.Location"><rhs name\="com.ems.Location"/></lhs><lhs name\="com.ems.Speaker"><rhs name\="com.ems.Speaker"/></lhs><lhs name\="com.ems.Manager"><rhs name\="com.ems.Manager"/></lhs><lhs name\="com.ems.Attenders"><rhs name\="com.ems.Attenders"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs></history>
+content_assist_number_of_computers=28
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

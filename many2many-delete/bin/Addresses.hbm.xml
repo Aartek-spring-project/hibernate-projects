@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.address">
+ 
+<class name="Addresses" table="addresses" >
+    <id name="aid" column="aid">
+    </id>
+    <set name="people" table="people_address">
+        <key column="aid" />
+        <many-to-many class="com.address.People"
+            column="pid" />
+    </set>
+    <property name="address_line" column="address_line" />
+     <property name="city" column="city" />
+      <property name="country" column="country" />
+      <property name="pincode" column="pincode" />
+</class>
+ 
+</hibernate-mapping>

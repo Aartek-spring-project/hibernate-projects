@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+   <class name="com.prestige.Pets" table="pets">  
+        
+<id name="petID" column="petID"  />
+<property name="petCategory" column="petCategory" length="10"/>
+<many-to-one name="parentObjects" column="Vdummy" class="com.prestige.Owner" cascade="all" />
+
+   </class> 
+</hibernate-mapping>

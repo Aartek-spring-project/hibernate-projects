@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ <class name="com.school.Language_l" table="Language_l">
+ 
+ <id name="l_id" column="l_id">
+ </id>
+ 
+ <property name="l_name" column="l_name"></property>
+
+ 
+ </class>
+ </hibernate-mapping>
